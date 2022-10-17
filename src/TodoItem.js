@@ -6,7 +6,9 @@ const TodoItem =({todo}) =>{
     return(
         <div>
             <li>
-                <span>{text}</span>
+                <span style={{
+                    textDecoration:done ? 'line-through':'none'
+                }}>{text}</span>
                 <button>삭제</button>
             </li>
         </div>
